@@ -117,7 +117,7 @@ header {
   .bio .hello {
     text-align: center; }
     .bio .hello h1 {
-      color: #fffb00;
+      color: #fffb00f0;
       -webkit-text-stroke: 2px black; }
 
 /*# sourceMappingURL=main.css.map */
