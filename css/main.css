@@ -1,9 +1,23 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat+Alternates:800|Roboto");
+::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.5em; }
+
+::-webkit-scrollbar-thumb {
+  background: slategray; }
+
+::-webkit-scrollbar-track {
+  background: #b8c0c8; }
+
+body {
+  scrollbar-face-color: slategray;
+  scrollbar-track-color: #b8c0c8; }
+
 html {
   height: 100%; }
 
 body {
-  background-image: url(../img/mainbg.jpg);
+  background-color: #dbe7ff;
   min-height: 100%;
   overflow: auto; }
 
@@ -30,13 +44,8 @@ a:hover {
   text-decoration: none;
   color: #37627B; }
 
-p {
-  font-family: "Roboto";
-  color: black; }
-
 .page-footer {
   background: black;
-  opacity: 0.8;
   width: 100%;
   bottom: 0;
   position: fixed; }
@@ -47,22 +56,13 @@ p {
 header {
   margin: 0;
   padding: 0;
-  background: black;
-  opacity: 0.8; }
+  background: black; }
 
 .social {
   text-align: center; }
 
 .content {
   height: calc(100vh - 112px - 130px);
-  overflow: scroll; }
-
-.bio {
-  width: 100%;
-  height: calc(100vh - 112px - 130px);
-  background-color: white;
-  opacity: 0.8;
-  padding: 30px;
   overflow: scroll; }
 
 .blog {
@@ -74,5 +74,50 @@ header {
 .foot-pad {
   padding-top: 30px;
   padding-bottom: 15px; }
+
+.photoblock {
+  height: auto;
+  background-size: cover; }
+
+.contactme {
+  min-height: calc( 100vh - 112px - 130px);
+  text-align: center;
+  width: 50%;
+  margin: auto; }
+  .contactme .in-article {
+    color: #37627B;
+    -webkit-text-stroke: 2px black; }
+  .contactme .contact-form {
+    border: 1px solid black; }
+  .contactme .send-button {
+    background-color: #37627B;
+    border: none; }
+
+.center {
+  margin: auto;
+  text-align: center; }
+
+.bio {
+  width: 100%;
+  background-color: white;
+  padding: 30px;
+  overflow: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: calc( 100vh - 112px - 130px);
+  background-image: url("../img/photo/littleMaslikhin.jpg");
+  background-size: cover; }
+  .bio .hello {
+    text-align: center; }
+    .bio .hello h1 {
+      color: #fffb00;
+      -webkit-text-stroke: 2px black; }
 
 /*# sourceMappingURL=main.css.map */

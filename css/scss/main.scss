@@ -1,8 +1,30 @@
+@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white,  50%)) {
+  // For Google Chrome
+  ::-webkit-scrollbar {
+    width:  $size;
+    height: $size;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: $foreground-color;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: $background-color;
+  }
+
+  // For Internet Explorer
+  body {
+    scrollbar-face-color: $foreground-color;
+    scrollbar-track-color: $background-color;
+  }
+}
+@include scrollbars(.5em, slategray);
 @import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:800|Roboto');
 
 $Mont: 'Montserrat Alternates';
 $Roboto: 'Roboto';
-$yellow: #F4AB2C;
+$yellow: #fffb00;
 $blue: #37627B;
 
 html {
@@ -10,7 +32,7 @@ html {
 }
 
 body {
-  background-image: url(../img/mainbg.jpg);
+  background-color: #dbe7ff;
   min-height: 100%;
   overflow:auto;
 }
@@ -43,14 +65,9 @@ a:hover {
   color: $blue;
 }
 
-p {
-  font-family: $Roboto;
-  color: black;
-}
 
 .page-footer {
   background: black;
-  opacity: 0.8;
   width: 100%;
   bottom: 0;
   position: fixed;
@@ -63,7 +80,6 @@ header {
    margin: 0;
    padding: 0;
    background: black;
-   opacity: 0.8;
 }
 
 .social {
@@ -72,15 +88,6 @@ header {
 
 .content {
   height: calc(100vh - 112px - 130px);
-  overflow: scroll;
-}
-
-.bio {
-  width: 100%;
-  height: calc(100vh - 112px - 130px);
-  background-color: white;
-  opacity: 0.8;
-  padding: 30px;
   overflow: scroll;
 }
 
@@ -94,4 +101,52 @@ header {
 .foot-pad {
   padding-top: 30px;
   padding-bottom: 15px;
+}
+
+.photoblock {
+  height: auto;
+  background-size: cover;
+}
+
+.contactme {
+  min-height: calc( 100vh - 112px - 130px);
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  .in-article {
+    color: $blue;
+    -webkit-text-stroke: 2px black;
+  }
+  .contact-form {
+    border: 1px solid black;
+  }
+  .send-button {
+    background-color: $blue;
+    border: none;
+  }
+}
+
+.center {
+  margin: auto;
+  text-align: center;
+}
+
+.bio {
+  width: 100%;
+  background-color: white;
+  padding: 30px;
+  overflow: scroll;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc( 100vh - 112px - 130px);
+  background-image: url("../img/photo/littleMaslikhin.jpg");
+  background-size: cover;
+    .hello {
+        h1 {
+          color: $yellow;
+          -webkit-text-stroke: 2px black;
+        }
+      text-align: center;
+    }
 }

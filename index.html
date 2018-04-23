@@ -27,7 +27,7 @@
                             <a class="nav-link" href="#audio">audio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#photo">photo</a>
+                            <a class="nav-link" href="#carouselExampleControls">photo</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contacts">contacts</a>
@@ -40,13 +40,10 @@
                 <div class="container">
                     <div class="row">
                         <div class="content">
-                            <div class="bio">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer auctor finibus ante vel accumsan. Proin sed leo quis dui auctor tincidunt. Nam urna ligula, egestas in lorem sit amet, lobortis pharetra justo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut egestas dapibus est, ut luctus lacus. Integer a tincidunt lacus. Praesent laoreet eros ac nisi ullamcorper lacinia.
-
-                                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla porta lectus vel elit feugiat, nec pulvinar massa congue. Praesent lobortis finibus imperdiet. Sed eget posuere nunc. Aenean laoreet sodales nisl ut mollis. Sed interdum molestie sem. Sed a cursus libero. Nulla facilisi. Donec dictum in nisi eget finibus. Quisque turpis lectus, blandit condimentum eleifend non, volutpat id ipsum. Cras molestie augue non massa rutrum, sit amet vehicula orci elementum. Nulla sed malesuada ipsum, vel laoreet mauris. Nulla eget luctus purus. Vivamus a sapien tincidunt, vestibulum tellus eu, iaculis diam.
-
-                                    Nulla diam metus, pretium eget facilisis at, bibendum ut mi. Donec aliquam iaculis justo, ac interdum quam porta et. Etiam eleifend velit dui, sit amet varius nisl semper at. Nulla pharetra, magna ut vestibulum porttitor, ipsum nibh interdum arcu, quis volutpat risus ipsum ut erat. Vivamus scelerisque, nisi at viverra imperdiet, enim eros efficitur elit, in congue orci nisi ac augue. Quisque convallis et purus pulvinar vulputate. In ut lectus viverra sapien interdum sollicitudin vitae tincidunt ante. Aliquam sollicitudin a ante tincidunt accumsan. Mauris vel mattis purus. Aliquam tempor venenatis risus, sit amet cursus magna. Morbi molestie mauris in odio sagittis, nec maximus erat blandit. Aliquam aliquam felis et congue ultrices. Phasellus in libero aliquet, congue quam quis, condimentum felis.
-
+                            <div class="bio" id="bio">
+                                <div class="hello">
+                                    <p><h1>Hello!<br>I'm Dmytro Maslikhin.<br>And I'm an Artist experienced in Programming.</h1></p>
+                                </div>
                             </div>
                             <div class="blog" id="blog">
                                 <iframe width="100%" height="100%" src="https://maslikhin.blogspot.com/" name="iframe" scrolling="auto"></iframe>
@@ -56,6 +53,48 @@
                             </iframe>
                             <iframe id="audio" width="100%" height="100%" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/363218303&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
                             </iframe>
+                            <div id="carouselExampleControls" class="carousel slide photoblock" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img class="d-block w-100" src="img/photo/chruta2.jpg?auto=yes&bg=777&fg=555&text=First slide" alt="First slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="img/photo/9V2Y9hBGi3A.jpg?auto=yes&bg=666&fg=444&text=Second slide" alt="Second slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="img/photo/desusdrums.jpg?auto=yes&bg=555&fg=333&text=Third slide" alt="Third slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="img/photo/chruta1.jpg?auto=yes&bg=444&fg=333&text=Fourth slide" alt="Fourth slide">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                            <div class="contactme">
+                                <form id="contacts">
+                                    <h1 class="in-article">Contact Me</h1>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1"><h6>Your email address</h6></label>
+                                        <input type="email" class="form-control contact-form" id="exampleFormControlInput1" placeholder="name@mail.com">
+                                    </div>
+                                    <div class="form-group center">
+                                        <label for="exampleFormControlFile1"><h6>Attach file</h6></label>
+                                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlTextarea1"><h6>Message</h6></label>
+                                        <textarea class="form-control contact-form" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    </div>
+                                    <input class="btn btn-primary send-button" type="submit" value="Send">
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
